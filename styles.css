@@ -2,6 +2,7 @@
 
 *{
 	box-sizing: border-box;
+	transition: all ease-in-out 250ms;
 }
 
 body{
@@ -21,6 +22,38 @@ img{
 	margin: 0 auto; 
 }
 
+.clearfix::after,
+section::after,
+footer::after{
+	content: '';
+	display: block;
+	clear:	both;
+}
+
+/*Column System
+===========================*/
+
+[class^=col-]{
+	float: left;
+	padding: 0 .5em;
+}
+
+[class^=col-]:first-child{
+	 padding-left: 0;
+}
+
+[class^=col-]:last-child{
+	 padding-right: 0;
+}
+
+.col-3{
+	width: 50%;
+}
+
+.col-1{
+	width: 16.666666667%;
+}
+
 /*Typography
 ===========================*/
 
@@ -35,6 +68,16 @@ img{
 	font-weight: 300;
 	display: block;
 	font-size: .9em; 
+}
+
+.title-cta{
+	margin: 0 0 .25em;
+}
+
+.unstyled-list{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
 }
 
 h1{
@@ -98,6 +141,18 @@ p:last-of-type{
 	font-size: .7rem;
 	font-weight: 700;
 }
+
+.button-dark{
+	color:	#232323;
+	border-color: #232323;
+}
+
+.button-dark:hover,
+.button-dark:focus{
+	background: #232323;
+	color: #00ff6c; 
+}
+
 /*Header
 ===========================*/
 
@@ -235,7 +290,7 @@ nav a:focus{
 ===========================*/
 
 .portfolio{
-	margin: 3em 0;
+	margin: 3em 0 0;
 }
 
 .port-item{
@@ -250,11 +305,11 @@ nav a:focus{
 .port-desc{
 	position: absolute;
 	z-index: 100;
-	bottom: 2em;
-	left: 3em;
-	right: 3em;
+	bottom: 0em;
+	left: 0em;
+	right: 0em;
 	color: white;
-	background: rgba(0,0,0,.75);
+	background: rgba(0,0,0,.6);
 	padding: 1em;
 	padding-bottom: 1em;
 }
@@ -273,5 +328,32 @@ nav a:focus{
 @media (min-width: 60rem){
 	.port-item{
 		width: 33.3333333333334%;
+	/*Consider removing hover for final project*/
+		overflow: hidden;
+	}
+
+	.port-desc{
+		transform: translateY(150%);
+	}
+
+	.port-item:hover .port-desc{
+		transform: translateY(0%);
 	}
 }
+
+/*Cta (Call to action)
+===========================*/
+
+.cta{
+	background-color: #00ff6c;
+	padding: 3em 0; 
+}
+
+/*Footer
+===========================*/
+
+footer{
+	background: #232323;
+	color: #FFF;text-align: left;
+}
+
