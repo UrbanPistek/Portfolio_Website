@@ -198,12 +198,20 @@ main {
   .about-info .bio-image {
     grid-area: bioimage;
     margin: auto;
-    border-radius: 50%;
+    margin-top: 2rem;
+    width: 300px;
+    height: 200px;
     border: #eece1a 3px solid; }
 
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
+
+@media (max-width: 700px){
+  .about-info .bio {
+    margin-top: 2rem;
+    }
+}
 
   .about-info .job-1 {
     grid-area: job1; }
@@ -579,6 +587,8 @@ header{
   margin: 1em;
 }
 
+
+
 nav ul{
   margin: 0;
   padding: 1em;
@@ -604,8 +614,47 @@ nav a:focus{
   color: #DDD;
 }
 
-@media (min-width: 60rem){
+@media (max-width: 850px){
   nav{
     float: left; 
+  }
+}
+
+@media (max-width: 625px) {
+  
+}
+
+/*Modify Header to switch to other version for Mobile */
+
+/*
+============================================
+Buttons
+============================================
+*/
+
+.button{
+  display: inline-block;
+  font-size: 1.15rem;
+  text-decoration: none;
+  text-transform: uppercase;;
+  border-width: 2px; 
+  border-style: solid; 
+  padding: .5em 1.75em;
+}
+
+.button-accent{
+  color:  #eece1a;
+  border-color: #eece1a;
+}
+
+.button-accent:hover,
+.button-accent:focus{
+  background: #1b1c1c;
+  color: #eece1a; 
+}
+
+@media (min-width: 60rem) {
+  .button {
+    font-size: 1.5rem;
   }
 }
