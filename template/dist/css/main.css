@@ -113,7 +113,8 @@
   transition-delay: 0.4s; }
 
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  }
 
 body {
   background: #444;
@@ -126,11 +127,12 @@ body {
   body#bg-img {
     background: url(../img/background.jpg);
     background-attachment: fixed;
-    background-size: cover; }
+    background-size: cover;
+    }
 
     body#bg-img:after {
       content: '';
-      position: absolute;
+      position: fixed;
       top: 0;
       right: 0;
       width: 100%;
@@ -242,7 +244,7 @@ main {
     transition: all 0.5s ease-out; }
 
     .boxes div:hover {
-      padding: 0.5rem 1.5rem;
+      /*padding: 0.5rem 1.5rem;*/
       background: #eece1a;
       color: #000; }
 
@@ -658,3 +660,75 @@ Buttons
     font-size: 1.5rem;
   }
 }
+
+/*
+===================================================
+Project Page
+===================================================
+*/
+
+.proj-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: 'bioimage bio bio';
+  grid-template-columns: repeat(3); }
+
+  .proj-info .bio-image {
+    grid-area: bioimage;
+    margin: auto;
+    margin-top: 2rem;
+    width: 300px;
+    height: 200px;
+    border: #eece1a 3px solid; }
+
+  .proj-info .bio {
+    padding-top: 1.5rem;
+    grid-area: bio;
+    font-size: 1.5rem; }
+
+@media (max-width: 700px){
+  .proj-info .bio {
+    margin-top: 2rem;
+    }
+}
+
+.proj-desc {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: 'job1 job2 job3';
+  grid-template-columns: repeat(1fr); 
+  padding-top: 2rem;
+  }
+
+  .proj-desc .job-1 {
+    grid-area: job1; }
+
+  .proj-desc .job-2 {
+    grid-area: job2; }
+
+  .proj-desc .job-3 {
+    grid-area: job3; }
+
+  .proj-desc .job-4 {
+    grid-area: job1; }
+
+  .proj-desc .job-5 {
+    grid-area: job2; }
+
+  .proj-desc .job-6 {
+    grid-area: job3; }
+
+  .proj-desc .job {
+    background: #515151;
+    padding: 0.5rem;
+    border-bottom: #eece1a 5px solid; }
+
+  .job .proj-title{
+    color: #ffffff;
+    font-size: 3rem;
+  }
+
+  .job .proj-skills{
+    color: #eece1a;
+    font-size: 1rem;
+  }
