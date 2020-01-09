@@ -808,11 +808,13 @@ Project Page
 
   .job .proj-title{
     color: #ffffff;
+    line-height: 3.25rem;
     font-size: 3rem;
   }
 
   .job .proj-skills{
     color: #eece1a;
+    padding-top: 1.25rem;
     font-size: 1rem;
   }
 
