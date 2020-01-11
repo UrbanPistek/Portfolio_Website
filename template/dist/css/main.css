@@ -169,6 +169,7 @@ header {
   width: 100%; }
 
 .text-secondary {
+  /*color: #04d4a3;*/
   color: #eece1a; }
 
 main {
@@ -758,10 +759,11 @@ Project Page
 
   .proj-info .bio-image {
     grid-area: bioimage;
+    display: cover;
     margin: auto;
     margin-top: 2rem;
-    width: 300px;
-    height: 200px;
+    width: 450px;
+    height: 250px;
     border: #eece1a 3px solid; }
 
   .proj-info .bio {
@@ -816,6 +818,18 @@ Project Page
     color: #eece1a;
     padding-top: 1.25rem;
     font-size: 1rem;
+  }
+
+  .proj-titles .lg-heading-projrob {
+      font-size: 3rem;
+      padding-top: 1rem;
+  }
+
+  .proj-titles .sm-heading-projrob{
+    margin-bottom: 0.25rem;
+    padding: 0.2rem 1rem;
+    background: rgba(73, 73, 73, 0.5);
+    float: left;
   }
 
       /*
