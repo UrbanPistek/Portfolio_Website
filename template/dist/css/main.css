@@ -472,7 +472,7 @@ transform: scale(1.075);
       rgba(0, 0, 0, 0.10)
     ),
     /* bottom, image */
-    url(../img/projects/project3.png);
+    url(../img/projects/project3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -486,7 +486,7 @@ transform: scale(1.075);
       rgba(0, 0, 0, 0.750)
     ),
     /* bottom, image */
-    url(../img/projects/project3.png);
+    url(../img/projects/project3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -556,7 +556,7 @@ transform: scale(1.075);
       rgba(0, 0, 0, 0.10)
     ),
     /* bottom, image */
-    url(../img/projects/project6.jpg);
+    url(../img/projects/project6.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -570,7 +570,7 @@ transform: scale(1.075);
       rgba(0, 0, 0, 0.750)
     ),
     /* bottom, image */
-    url(../img/projects/project6.jpg);
+    url(../img/projects/project6.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -832,9 +832,44 @@ Project Page
     float: left;
   }
 
+  .bio .proj-img-big{
+    float: center;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    width: 1200px;
+    height: 900px;
+  }
+
+  /*
+      ==============================================================
+        Start About Section
+      ==============================================================
+      */
+
+  .about-titles h3{
+    padding-top: 0.25rem;
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .about-titles .lg-heading-about {
+      font-size: 3rem;
+      padding-top: 1rem;
+      padding-bottom: -0.25rem;
+      margin-bottom: -0.25rem;
+  }
+
+  .about-titles .sm-heading-about{
+    margin-bottom: 0.25rem;
+    padding: 0.2rem 1rem;
+    background: rgba(73, 73, 73, 0.5);
+    float: left;
+  }
+
       /*
       ==============================================================
-        Project Description
+        End About Section
       ==============================================================
       */
 
