@@ -757,7 +757,55 @@ Project Page
   grid-template-areas: 'bioimage bio bio';
   grid-template-columns: repeat(3); }
 
-  .proj-info .bio-image {
+/*===================================================
+Bio Image Customization
+====================================================*/
+  .proj-info .bio-image-uwaft {
+    grid-area: bioimage;
+    display: cover;
+    margin: auto;
+    margin-top: 2rem;
+    width: 450px;
+    height: 250px;
+    border: #eece1a 3px solid; }
+
+    .proj-info .bio-image-robotic {
+    grid-area: bioimage;
+    display: cover;
+    margin: auto;
+    margin-top: 2rem;
+    width: 500px;
+    height: 300px;
+    border: #eece1a 3px solid; }
+
+    .proj-info .bio-image-sync {
+    grid-area: bioimage;
+    display: cover;
+    margin: auto;
+    margin-top: 2rem;
+    width: 500px;
+    height: 300px;
+    border: #eece1a 3px solid; }
+
+    .proj-info .bio-image-ura {
+    grid-area: bioimage;
+    display: cover;
+    margin: auto;
+    margin-top: 2rem;
+    width: 450px;
+    height: 250px;
+    border: #eece1a 3px solid; }
+
+    .proj-info .bio-image-cern {
+    grid-area: bioimage;
+    display: cover;
+    margin: auto;
+    margin-top: 2.5rem;
+    width: 650px;
+    height: 450px;
+    border: #eece1a 3px solid; }
+
+    .proj-info .bio-image-web {
     grid-area: bioimage;
     display: cover;
     margin: auto;
