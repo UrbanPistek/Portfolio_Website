@@ -745,6 +745,18 @@ Buttons
   }
 }
 
+.button-accent-proj{
+  margin-left: 2rem;
+  color:  #eece1a;
+  border-color: #eece1a;
+}
+
+.button-accent-proj:hover,
+.button-accent-proj:focus{
+  background: #1b1c1c;
+  color: #eece1a; 
+}
+
 /*
 ===================================================
 Project Page
