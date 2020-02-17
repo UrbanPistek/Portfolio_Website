@@ -124,7 +124,7 @@ body {
   line-height: 1.5; }
 
   body#bg-img {
-    background: url(../img/background.jpg);
+    background: url(../img/background1.jpg);
     background-attachment: fixed;
     background-size: cover;
     }
@@ -201,7 +201,7 @@ About Page
   display: grid;
   grid-gap: 30px;
   padding-top: 1.5rem;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  grid-template-areas: 'bioimage bio bio' 'job1 job1 job1';
   grid-template-columns: repeat(3, 1fr); }
 
   .about-info .bio-image {
@@ -229,25 +229,47 @@ About Page
   .job h6 {
     margin-top: -0.25rem;
     margin-bottom: -1rem;
+    margin-left: 1rem;
+    padding-left: 1rem;
     font-size: 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #eece1a;
   }
 
   .job h4 {
+    margin-left: 1rem;
+    padding-left: 1rem;
     margin-bottom: -0.4rem;
     font-size: 0.80rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
+  .job h3 {
+    padding-left: 1rem;
+  }
+
+  .job p {
+    padding-left: 1rem;
+  }
+
   .about-info .job-1 {
     grid-area: job1; }
 
+  .about-job-image{
+    margin-top: 1rem;
+    padding-top: 1rem; 
+    margin: 2rem;
+    height: 50%;
+    width: 30%;
+    float: right;
+    padding-right: 1rem;
+  }
+
   .about-info .job-2 {
-    grid-area: job2; }
+    grid-area: job1; }
 
   .about-info .job-3 {
-    grid-area: job3; }
+    grid-area: job1; }
 
   .about-info .job {
     background: #515151;
@@ -930,14 +952,35 @@ Bio Image Customization
     }
   }
 
+  .about-titles-image {
+    margin-top: 2rem;
+    padding-top: 4rem;
+    padding: 0.5rem;
+    height: 200px;
+    width: 200px;
+    float: right; 
+  }
       /*
       ==============================================================
         End About Section
       ==============================================================
       */
 
-/* Start About Area */ 
+      /*
+      ==============================================================
+        Start Styling Section Section
+      ==============================================================
+      */
 
+      .about-titles hr { 
+        border: 1px solid #eece1a;
+        display: block;
+        border-style: solid;
 
-
-/* End About Area */
+        }
+      
+      /*
+      ==============================================================
+        Start Styling Section Section
+      ==============================================================
+      */
